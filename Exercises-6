@@ -1,0 +1,196 @@
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	double x,y;
+
+	printf("Enter x: ");
+	scanf("%lf",&x);
+	printf("Enter y: ");
+	scanf("%lf",&y);
+
+	if (y == 0 && x != 0)
+		printf("Coordinate is on the x axis\n");
+	else if (x == 0 && y != 0)
+		printf("Coordinate is on the y axis\n");
+	else if (x == 0 && y == 0)
+		printf("Coordinate is at the origin\n");
+
+	else if (x > 0 && y > 0)
+		printf("Coordinate is at the first quadrant\n");
+	else if (x < 0 && y > 0)
+		printf("Coordinate is at the second quadrant\n");
+	else if (x < 0 && y < 0)
+		printf("Coordinate is at the third quadrant\n");
+	else if (x > 0 && y < 0)
+		printf("Coordinate is at the fourth quadrant\n");
+	else 
+		printf("Wrong input please try again\nTry inputting 2 integers as coordinates\n");
+
+	return 0;
+}
+*/
+
+//QUESTION 2
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	
+	int x,y;
+	char oper;
+
+	printf("Input first operand: ");
+	scanf("%d",&x);
+	printf("Input second operand: ");
+	scanf("%d",&y);
+
+	printf("Input the operation you'd like to perform: ");
+	scanf(" %c",&oper);
+
+	switch (oper)
+	{
+	    case '+':
+		printf("%d + %d is equal to %d\n",x,y,x+y);
+		break;
+
+		case '-':
+		printf("%d - %d is equal to %d\n",x,y,x-y);
+		break;
+
+		case '*':
+		printf("%d * %d is equal to %d\n",x,y,x*y);
+		break;
+
+		case '/':
+		printf("%d / %d is equal to %.2lf\n",x,y,(double)x/y);
+		break;
+
+			default:
+				printf("Wrong input\n Try + for summation, - for substraction, * for multiplication, / for division\n");
+	}
+	
+	return 0;
+}
+*/
+
+//QUESTION 3
+/*
+#include <stdio.h>
+#define pi 3.14
+int main(void)
+{
+    double radius,result;
+	char letter;
+	
+	printf("Input radius: ");
+	scanf("%lf",&radius);
+	printf("Press A or a for area C or c for circumference\n");
+	printf("Input operation: ");
+	scanf(" %c",&letter);
+
+	switch (letter)
+	{
+	  case 'A':case 'a':
+	  {
+		  result=pi*radius*radius;
+		  printf("Area of the circle is %.2lf\n",result);
+		  break;
+	  }
+      case 'C':case 'c':
+      {
+		  result=2*pi*radius;
+		  printf("Circumference of the circle is %.2lf\n",result);
+		  break;
+	  }
+	  default:
+		  printf("Wrong input, try A or a for area C or c for circumference\n");
+	}
+
+	return 0;
+}
+
+*/
+//QUESTION 3
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int x,y,z,t;
+	printf("Enter the first number: ");
+	scanf("%d",&x);
+	printf("Enter the second number: ");
+	scanf("%d",&y);
+	printf("Enter the third number: ");
+	scanf("%d",&z);
+	printf("Enter the fourth number: ");
+	scanf("%d",&t);
+
+	if(x>=y && x>=z && x>=t)
+		printf("%d is the largest number\n",x);
+	else if(y>=x && y>=z && y>=t)
+		printf("%d is the largest number\n",y);
+	else if(z>=x && z>=y && z>=t)
+		printf("%d is the largest number\n",z);
+	else if(t>=x && t>=y && t>=z)
+		printf("%d is the largest number\n",t);
+	else 
+		printf("Wrong input, try inputting only integer numbers");
+	return 0;
+}
+*/
+//QUESTION 3
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	int count=0;
+	char ans;
+    
+	printf("Answer the below questions with t (true) or f (false) accordingly\n");
+	
+	printf("Ankara is the capital of Turkey: ");
+	scanf(" %c",&ans);
+	if(ans == 't')
+		count=count+1;
+
+	printf("Is 3 + 5 equal to 9 ");
+	scanf(" %c",&ans);
+	if(ans == 'f')
+		count=count+1;
+
+	printf("Eryaman is not in Ankara: ");
+	scanf(" %c",&ans);
+	if(ans == 'f')
+		count=count+1;
+
+	printf("Is pi number 3.14 ?: ");
+	scanf(" %c",&ans);
+	if(ans == 't')
+		count=count+1;
+
+	printf("Is your grandmother mother of your mother ?: ");
+	scanf(" %c",&ans);
+	if(ans == 't')
+		count=count+1;
+
+	if(count == 5)
+		printf("Excellent\n");
+	else if(count == 4)
+		printf("Good\n");
+	else if(count == 3)
+		printf("Normal\n");
+	else if(count == 2)
+		printf("So so\n");
+	else if(count == 1)
+		printf("Bad\n");
+	else 
+		printf("Fail\n");
+
+	return 0;
+}
+*/
